@@ -17,6 +17,17 @@ namespace Indexer
 
             for(int i = 0; i < grades.Length; i++)
                 Console.WriteLine(grades[i]);
+            
+            StringDataStore<string> names = new StringDataStore<string>(5);
+            names[0] = "Steve";
+            names[1] = "Bill";
+            names[2] = "James";
+            names[3] = "Ram";
+            names[4] = "Andy";
+
+            for (int i = 0; i < names.Length;i++)
+                  Console.WriteLine(names[i]);
+            
         }
     }
 }
